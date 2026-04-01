@@ -320,6 +320,13 @@ const studentsData = [
         roles: ["سفير", "وسيط"],
         message: "I’m here to help, support you whenever you need it and we are all here to grow together",
         image: ""
+    },
+    {
+        name: "هاجر السيد عبد المنعم",
+        class: "S6",
+        roles: ["سفير", "داعم مهني"],
+        message: "I’m always here for you to help, support, and guide you whenever you need it. Feel free to ask anytime🫶🏻.",
+        image: "imgs/hagar.jpeg"
     }
 ];
 
