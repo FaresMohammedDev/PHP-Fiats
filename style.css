@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;700;900&display=swap');
+
+:root {
+    --bg-color: #030712;
+    --card-bg: rgba(17, 25, 40, 0.6);
+    --card-border: rgba(255, 255, 255, 0.08);
+    --text-primary: #f9fafb;
+    --text-secondary: #9ca3af;
+    --accent-color: #3b82f6;
+    --accent-glow: rgba(59, 130, 246, 0.5);
+    --font-main: 'Cairo', sans-serif;
+    --font-alt: 'Outfit', sans-serif;
+    --transition-speed: 0.4s;
+    --glass-blur: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main);
+}
+
+body {
+    background-color: var(--bg-color);
+    background-image: url('imgs/PHP.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Premium Glow Background System */
+.bg-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(13, 17, 23, 0.6) 0%, rgba(3, 7, 18, 0.95) 100%);
+    z-index: -1;
+}
+
+.glow-system {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: -2;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.glow-blob {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: var(--accent-glow);
+    filter: blur(150px);
+    border-radius: 50%;
+    opacity: 0.15;
+    animation: drift 20s infinite alternate ease-in-out;
+}
+
+.blob-1 { top: -10%; left: -10%; background: #1e40af; }
+.blob-2 { bottom: -10%; right: -10%; background: #3b82f6; animation-delay: -5s; }
+.blob-3 { top: 40%; left: 60%; background: #60a5fa; width: 400px; height: 400px; animation-delay: -10s; }
+
+@keyframes drift {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(100px, 50px) scale(1.1); }
+}
+
+/* Navigation Bar */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Very clear glass effect */
+    background: rgba(13, 17, 23, 0.25); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+    padding: 0.8rem 0;
+    transition: transform 0.4s ease, background 0.3s ease;
+}
+
+/* Class to hide nav when scrolling down */
+.main-nav.nav-hidden {
+    transform: translateY(-100%);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    background-image: url('imgs/PHP.jpeg');
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-decoration: none;
+    margin-right: auto; /* Push to far left side in RTL */
+    margin-left: 0;
+}
+
+/* Restyled Role Filters (btn-group) within Nav Bar */
+.main-nav .btn-group {
+    display: flex;
+    gap: 0.8rem; /* Increased spacing between pills */
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav .filter-btn {
+    padding: 0.6rem 1.4rem;
+    font-size: 0.95rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.main-nav .filter-btn:hover {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: rgba(59, 130, 246, 0.3);
+    transform: translateY(-2px);
+}
+
+.main-nav .filter-btn.active {
+    background: var(--accent-color);
+    color: white;
+    box-shadow: 0 0 20px var(--accent-glow);
+    border-color: var(--accent-color);
+}
+
+.mobile-menu-btn {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Header */
+.hero {
+    text-align: center;
+    padding: 120px 0 1rem; /* Increased top padding to clear fixed Nav Bar */
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.php-title {
+    font-size: 25vw;
+    font-family: var(--font-alt);
+    font-weight: 900;
+    letter-spacing: -2px;
+    background-image: url('imgs/PHP.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+    text-align: center;
+    width: 100%;
+    filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.8));
+    animation: fadeInDown 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    text-shadow: 0 10px 40px rgba(59, 130, 246, 0.3);
+}
+
+.php-subtitle {
+    font-size: 1.4rem;
+    font-family: var(--font-alt);
+    color: var(--text-secondary);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    animation: fadeInUp 1s ease-out 0.4s both;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none !important;
+}
+
+/* Container */
+.container {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 2rem 0; /* Updated to 100px top padding to clear fixed Nav Bar */
+    z-index: 10;
+    position: relative;
+}
+
+/* Roles Grid */
+.roles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    animation: fadeInUp 1s ease-out 0.6s both;
+    transition: opacity var(--transition-speed), transform var(--transition-speed);
+}
+
+.role-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 28px;
+    padding: 3rem 2rem;
+    text-align: center;
+    cursor: pointer;
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.role-card:hover {
+    transform: translateY(-12px);
+    border-color: rgba(255,255,255,0.2);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 15px var(--accent-glow);
+    background: rgba(22, 27, 34, 0.8);
+}
+
+.role-icon {
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.3));
+}
+
+.role-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.role-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* Students Section */
+.students-section {
+    display: none;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.students-section.active {
+    display: block;
+}
+
+.filters-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.filters-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-back {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    backdrop-filter: blur(10px);
+}
+
+.btn-back:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: white;
+}
+
+/* Button Groups (Filters) */
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.filter-btn {
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text-secondary);
+    border: 1px solid var(--card-border);
+    padding: 0.9rem 1.8rem;
+    border-radius: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-alt);
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    backdrop-filter: blur(10px);
+}
+
+.filter-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.filter-btn.active {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 25px var(--accent-glow);
+    font-weight: 700;
+}
+
+/* Grade filters specifically */
+.grade-filters {
+    margin-top: 0.5rem;
+}
+.grade-filters .filter-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+}
+
+/* Students Grid */
+.students-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+/* Student Card (Image Background Style) */
+.student-card {
+    height: 420px;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    cursor: pointer;
+}
+
+.student-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+.team-leader-card {
+    border: 3px solid #eab308;
+    box-shadow: 0 10px 30px rgba(234, 179, 8, 0.3);
+}
+
+.team-leader-card:hover {
+    box-shadow: 0 15px 40px rgba(234, 179, 8, 0.5);
+    border-color: #ca8a04;
+}
+
+.student-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 60%;
+    background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 40%, transparent 100%);
+    z-index: 1;
+}
+
+.student-info {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    left: 25px;
+    z-index: 2;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.name-badge-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between name and badge */
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.student-name {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+    position: relative;
+    z-index: 5;
+    margin: 0; /* Remove bottom margin to align with badge */
+}
+
+.role-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.student-role {
+    font-size: 0.95rem;
+    color: #ccc;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+.team-leader-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: linear-gradient(135deg, #eab308, #ca8a04);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 4px 15px rgba(234, 179, 8, 0.4);
+    border: 1px solid rgba(255,255,255,0.4);
+    z-index: 10;
+}
+
+.student-message {
+    font-size: 1.05rem; /* Increased size slightly */
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.95);
+    font-style: italic;
+    line-height: 1.5;
+    border-right: 3px solid var(--accent-color);
+    padding-right: 12px;
+    margin-top: 8px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05));
+    border-radius: 0 8px 8px 0;
+    padding-left: 10px;
+}
+
+/* Simplified text-only badge style */
+.student-class-badge {
+    color: var(--accent-color);
+    font-weight: 900;
+    font-size: 1.1rem;
+    z-index: 5;
+    flex-shrink: 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-color);
+    background: transparent;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.no-results {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    background: rgba(22, 27, 34, 0.5);
+    border-radius: 15px;
+    border: 1px solid var(--card-border);
+    backdrop-filter: blur(10px);
+}
+
+/* Footer */
+footer {
+    padding: 2rem 1rem 3rem; /* Reduced padding */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--card-border);
+    padding: 2rem 4rem;
+    border-radius: 40px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    width: auto;
+    min-width: 320px;
+    max-width: 800px;
+    animation: fadeInUp 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Compact gap */
+}
+
+.footer-content p {
+    color: #e6edf3;
+    font-weight: 700;
+    font-size: 1.1rem; /* Smaller font */
+    letter-spacing: 1px;
+}
+
+.eng-name {
+    color: #58a6ff;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px; /* Even smaller */
+    height: 32px;
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text-secondary);
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1rem; /* Smaller font */
+    transition: all var(--transition-speed);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.social-icon.whatsapp:hover { color: #25D366; background: rgba(37, 211, 102, 0.1); border-color: #25D366; }
+.social-icon.phone:hover { color: #58a6ff; background: rgba(88, 166, 255, 0.1); border-color: #58a6ff; }
+.social-icon.telegram:hover { color: #0088cc; background: rgba(0, 136, 204, 0.1); border-color: #0088cc; }
+.social-icon.facebook:hover { color: #1877F2; background: rgba(24, 119, 242, 0.1); border-color: #1877F2; }
+.social-icon.linkedin:hover { color: #0A66C2; background: rgba(10, 102, 194, 0.1); border-color: #0A66C2; }
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+
+    .nav-logo {
+        font-size: 1.4rem;
+    }
+
+    .main-nav .btn-group {
+        gap: 0.5rem;
+        overflow-x: auto;
+        padding-bottom: 5px;
+        -webkit-overflow-scrolling: touch;
+        justify-content: flex-start;
+    }
+    
+    .main-nav .btn-group::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .main-nav .btn-group::-webkit-scrollbar-thumb {
+        background: rgba(255,255,255,0.2);
+        border-radius: 4px;
+    }
+
+    .main-nav .filter-btn {
+        white-space: nowrap;
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .container {
+        padding: 80px 1.5rem 0;
+    }
+
+    .php-title { 
+        font-size: 35vw; 
+    }
+
+    .php-subtitle {
+        letter-spacing: 5px;
+        font-size: 1rem;
+    }
+
+    .roles-grid {
+        gap: 1.5rem;
+    }
+
+    .role-card {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .students-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .student-card {
+        height: 400px;
+    }
+
+    .student-info {
+        right: 15px;
+        left: 15px;
+        bottom: 15px;
+    }
+
+    .student-name {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .php-title {
+        font-size: 40vw;
+    }
+    
+    .student-card {
+        height: 380px;
+    }
+
+    .filter-btn {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer Helping Program - FIATS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="bg-overlay"></div>
+    <div class="glow-system">
+        <div class="glow-blob blob-1"></div>
+        <div class="glow-blob blob-2"></div>
+        <div class="glow-blob blob-3"></div>
+    </div>
+    
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="btn-group role-filters" id="role-filters">
+                <button class="filter-btn" data-role="all">كل الأدوار</button>
+                <button class="filter-btn" data-role="سفير">سفير</button>
+                <button class="filter-btn" data-role="وسيط">وسيط</button>
+                <button class="filter-btn" data-role="داعم دراسي">داعم دراسي</button>
+                <button class="filter-btn" data-role="داعم مهني">داعم مهني</button>
+            </div>
+            <a href="#" class="nav-logo" id="nav-home">PHP</a>
+            <!-- Hamburger menu for mobile -->
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <header class="hero">
+        <h1 class="php-title">PHP</h1>
+        <p class="php-subtitle">Peer Helping Program</p>
+    </header>
+
+    <main class="container">
+        <!-- Roles Section (Home Page) -->
+        <section id="roles-section" class="roles-grid">
+            <div class="role-card" data-role="سفير">
+                <i class="fa-solid fa-microphone-lines role-icon"></i>
+                <h2>سفير</h2>
+            </div>
+            <div class="role-card" data-role="وسيط">
+                <i class="fa-solid fa-handshake-angle role-icon"></i>
+                <h2>وسيط</h2>
+            </div>
+            <div class="role-card" data-role="داعم دراسي">
+                <i class="fa-solid fa-book-open-reader role-icon"></i>
+                <h2>داعم دراسي</h2>
+            </div>
+            <div class="role-card" data-role="داعم مهني">
+                <i class="fa-solid fa-user-tie role-icon"></i>
+                <h2>داعم مهني</h2>
+            </div>
+        </section>
+        <!-- Students Section (Hidden by default, shown when filtering/clicking a role) -->
+        <section id="students-section" class="students-section">
+            <div class="filters-container">
+                <!-- Division Filters (Senior, Wheeler, Junior, الكل) -->
+                <div class="btn-group division-filters" id="division-filters">
+                    <button class="filter-btn active" data-division="all">الكل</button>
+                    <button class="filter-btn" data-division="J">Junior</button>
+                    <button class="filter-btn" data-division="W">Wheeler</button>
+                    <button class="filter-btn" data-division="S">Senior</button>
+                </div>
+
+                <!-- Grade Filters (Will display dynamically J6..J1, W6..W1, etc) -->
+                <div class="btn-group grade-filters hidden" id="grade-filters">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+
+            <div id="students-grid" class="students-grid">
+                <!-- Students will be dynamically injected here via JS -->
+            </div>
+            <div id="no-results" class="no-results hidden">
+                <p>لا يوجد طلاب يطابقون خيارات التصفية الحالية.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-card">
+            <div class="footer-content">
+                <p>Made by <span class="eng-name">Eng. Fares Mohammed</span></p>
+                <div class="social-links">
+                    <a href="https://wa.me/201203927960" target="_blank" class="social-icon whatsapp"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://t.me/+201203927960" target="_blank" class="social-icon telegram"><i
+                            class="fa-brands fa-telegram"></i></a>
+                    <a href="#" class="social-icon phone" id="copy-phone" title="Copy Phone Number"><i
+                            class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.facebook.com/fares.mohammed.819316" target="_blank" class="social-icon facebook"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/fares-mohammed-51a8a03a9/" target="_blank"
+                        class="social-icon linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
