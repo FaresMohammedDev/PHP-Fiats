@@ -1,6 +1,13 @@
 // Sample Data mapping
 const studentsData = [
     {
+        name: "يوسف مصطفى محمد",
+        class: "J1",
+        roles: ["وسيط"],
+        message: "I am always here to help you, and together we will achieve every success. 🤍",
+        image: ""
+    },
+    {
         name: "عمر وليد ابراهيم محمد",
         class: "J1",
         roles: ["داعم دراسي"],
@@ -41,13 +48,6 @@ const studentsData = [
         roles: ["سفير", "داعم دراسي"],
         message: "Believe in yourself ,keep going , your effort will pay off🤍",
         image: "imgs/farah.jpeg"
-    },
-    {
-        name: "انس احمد",
-        class: "W3",
-        roles: ["داعم مهني", "سفير"],
-        message: "وان ليس للانسان الا ما سعي",
-        image: "imgs/anas.jpeg"
     },
     {
         name: "مهند محمد السيد",
@@ -97,6 +97,13 @@ const studentsData = [
         roles: ["وسيط"],
         message: "im here to help you solve your problem 🩵",
         image: "imgs/arwa.jpeg"
+    },
+    {
+        name: "يوسف عبد الرحيم صابر",
+        class: "J5",
+        roles: ["داعم دراسي"],
+        message: "",
+        image: ""
     },
     {
         name: "عمار عمر",
@@ -155,6 +162,13 @@ const studentsData = [
         image: ""
     },
     {
+        name: "انس احمد",
+        class: "W3",
+        roles: ["داعم مهني", "سفير"],
+        message: "وان ليس للانسان الا ما سعي",
+        image: "imgs/anas.jpeg"
+    },
+    {
         name: "محمود محمد محمود",
         class: "W3",
         roles: ["سفير", "داعم مهني"],
@@ -197,7 +211,7 @@ const studentsData = [
         image: ""
     },
     {
-        name: "البشمهنـدس فَـارِس مُحمـد",
+        name: "فارس محمد",
         class: "W5",
         roles: ["سفير", "وسيط", "داعم دراسي", "داعم مهني"],
         message: "ممكن تسألني في المنهج وبرا المنهج ☝🏻❤️",
@@ -291,7 +305,7 @@ const studentsData = [
         class: "S2",
         roles: ["سفير", "وسيط"],
         message: "بحب وجودي هنا علشان بيخلينا نساعد بعض اذا كان ف ماده صعبه بالنسبه لحد فينا او في تأهلنا لحاجه معينه ونحل المشاكل لبعض ونعرف بعض ع الاماكن❤️🩹",
-        image: ""
+        image: "imgs/menna.jpeg"
     },
     {
         name: "ميار محمد السيد",
@@ -528,8 +542,8 @@ function renderStudents() {
     // If exploring "سفير", "داعم دراسي", or "all", bubble Fares to the top
     if (currentRole === 'سفير' || currentRole === 'داعم دراسي' || currentRole === 'all') {
         filteredStudents.sort((a, b) => {
-            if (a.name === "البشمهنـدس فَـارِس مُحمـد") return -1;
-            if (b.name === "البشمهنـدس فَـارِس مُحمـد") return 1;
+            if (a.name === "فارس محمد") return -1;
+            if (b.name === "فارس محمد") return 1;
             return 0;
         });
     }
@@ -552,8 +566,8 @@ function renderStudents() {
             let displayTitle = student.name;
             let currentMessage = student.message;
 
-            if (student.name === "البشمهنـدس فَـارِس مُحمـد") {
-                displayTitle = "البشمهنـدس فَـارِس مُحمـد";
+            if (student.name === "فارس محمد") {
+                displayTitle = "فارس محمد";
                 isTeamLeader = true;
 
                 if (currentRole === 'all') {
