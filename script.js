@@ -1,13 +1,6 @@
 // Sample Data mapping
 const studentsData = [
     {
-        name: "عمر احمد إبراهيم بيومي",
-        class: "S2",
-        roles: ["سفير", "وسيط"],
-        message: "“A word of support today may create someone's success tomorrow.” ✨",
-        image: "imgs/bayomy.jpeg"
-    },
-    {
         name: "عمر وليد ابراهيم محمد",
         class: "J1",
         roles: ["داعم دراسي"],
@@ -41,6 +34,13 @@ const studentsData = [
         roles: ["سفير"],
         message: "I’m here for impact, not just a role 👑",
         image: "imgs/omar.jpeg"
+    },
+    {
+        name: "فرح رضوان",
+        class: "J3",
+        roles: ["سفير", "داعم دراسي"],
+        message: "Believe in yourself ,keep going , your effort will pay off🤍",
+        image: "imgs/farah.jpeg"
     },
     {
         name: "مهند محمد السيد",
@@ -271,6 +271,13 @@ const studentsData = [
         roles: ["سفير"],
         message: "Don't give up, you deserve another chance to prove yourself 🫂💞",
         image: ""
+    },
+    {
+        name: "عمر احمد إبراهيم بيومي",
+        class: "S2",
+        roles: ["سفير", "وسيط"],
+        message: "“A word of support today may create someone's success tomorrow.” ✨",
+        image: "imgs/bayomy.jpeg"
     },
     {
         name: "منه الله حسن",
