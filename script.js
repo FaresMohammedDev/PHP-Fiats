@@ -40,7 +40,7 @@ const studentsData = [
         class: "J2",
         roles: ["سفير"],
         message: "I’m here for impact, not just a role 👑",
-        image: ""
+        image: "imgs/omar.jpeg"
     },
     {
         name: "مهند محمد السيد",
