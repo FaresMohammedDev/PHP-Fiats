@@ -1,74 +1,11 @@
 // Sample Data mapping
 const studentsData = [
     {
-        name: "مريم الكيلاني",
-        class: "J2",
-        roles: ["سفير"],
-        message: "I'm always here to help you 💗",
-        image: "imgs/mariemK.jpeg"
-    },
-    {
-        name: "ادهم عمرو",
-        class: "W5",
-        roles: ["داعم مهني", "سفير"],
-        message: "",
-        image: ""
-    },
-    {
-        name: "محمود محمد محمود",
-        class: "W3",
-        roles: ["سفير", "داعم مهني"],
-        message: "I wish you all great success and prosperity🪬",
-        image: ""
-    },
-    {
-        name: "اياد احمد",
-        class: "W6",
-        roles: ["داعم مهني"],
-        message: "Stars can't shine without darkness",
-        image: "imgs/eyad.jpeg"
-    },
-    {
-        name: "سما محمد عبد النبي",
-        class: "J4",
-        roles: ["وسيط"],
-        message: "The mediator is always by your side 🫵🏻💝",
-        image: "imgs/sama.jpeg"
-    },
-    {
-        name: "سيف اشرف جابر",
-        class: "W3",
-        roles: ["داعم مهني"],
-        message: "Do what you love and don’t worry about what people say✨",
-        image: ""
-    },
-    {
-        name: "سما محمد ذكي",
-        class: "J4",
-        roles: ["سفير"],
-        message: "Your ambassador is always by your side",
-        image: "imgs/samaZ.jpeg"
-    },
-    {
-        name: "اسلام احمد نصر",
-        class: "J2",
-        roles: ["داعم دراسي"],
-        message: "Failure is the basis of success",
-        image: ""
-    },
-    {
-        name: "عمار هاني",
-        class: "S1",
-        roles: ["سفير"],
-        message: "Don't give up, you deserve another chance to prove yourself 🫂💞",
-        image: ""
-    },
-    {
-        name: "ادهم محمد رضوان",
-        class: "W4",
-        roles: ["سفير"],
-        message: "In the right environment, everyone has the chance to grow and shine. 🌱✨",
-        image: "imgs/adham.jpeg"
+        name: "عمر احمد إبراهيم بيومي",
+        class: "S2",
+        roles: ["سفير", "وسيط"],
+        message: "“A word of support today may create someone's success tomorrow.” ✨",
+        image: "imgs/bayomy.jpeg"
     },
     {
         name: "عمر وليد ابراهيم محمد",
@@ -78,93 +15,31 @@ const studentsData = [
         image: "imgs/omarW.jpeg"
     },
     {
-        name: "إيهاب شريف إيهاب",
-        class: "J6",
-        roles: ["داعم دراسي"],
-        message: "Believe you can and you're halfway there",
-        image: ""
-    },
-    {
-        name: "عمر احمد إبراهيم بيومي",
-        class: "S2",
-        roles: ["سفير", "وسيط"],
-        message: "“A word of support today may create someone's success tomorrow.” ✨",
-        image: "imgs/bayomy.jpeg"
-    },
-    {
-        name: "محمد عباس محمد",
-        class: "J4",
+        name: "يارا إبراهيم محمد",
+        class: "J1",
         roles: ["وسيط"],
-        message: "Don't forget God's presence.",
-        image: "imgs/abbas.jpeg"
+        message: "I'm always here to support you and help resolve any conflicts🤍",
+        image: "imgs/yara.jpeg"
     },
     {
-        name: "ياسين اسلام",
-        class: "J6",
+        name: "مريم الكيلاني",
+        class: "J2",
         roles: ["سفير"],
-        message: "“Together we can achieve more.”",
-        image: "imgs/yassen.jpeg"
+        message: "I'm always here to help you 💗",
+        image: "imgs/mariemK.jpeg"
     },
     {
-        name: "تسنيم إمام",
-        class: "W2",
-        roles: ["سفير", "داعم دراسي"],
-        message: "Do everything that will prevent you from saying, 'I wish that had happened.'<br>Be proud of your effort<br>Admit your mistake<br>Remember me ever forget me never ✨",
+        name: "اسلام احمد نصر",
+        class: "J2",
+        roles: ["داعم دراسي"],
+        message: "Failure is the basis of success",
         image: ""
     },
     {
-        name: "البشمهنـدس فَـارِس مُحمـد",
-        class: "W5",
-        roles: ["سفير", "وسيط", "داعم دراسي", "داعم مهني"],
-        message: "ممكن تسألني في المنهج وبرا المنهج ☝🏻❤️",
-        roleMessages: {
-            "داعم دراسي": "ممكن تسألني في المنهج وبرا المنهج ☝🏻❤️",
-            "سفير": "{وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَى وَلَا تَعَاوَنُوا عَلَى الْإِثْمِ وَالْعُدْوَانِ}",
-            "وسيط": "﴿ إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ ۚ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ﴾",
-            "داعم مهني": "﴿ وَأَن لَّيْسَ لِلْإِنسَانِ إِلَّا مَا سَعَىٰ﴾"
-        },
-        image: "imgs/fares.jpeg"
-    },
-    {
-        name: "سعاد ابراهيم \"سيرو\"",
-        class: "W6",
-        roles: ["سفير", "داعم دراسي"],
-        message: "The beginning is the middle of the road, so I am here to always make it easier and better for you with a smile🤍🤗",
-        image: ""
-    },
-    {
-        name: "جنى رضا",
-        class: "W1",
-        roles: ["داعم دراسي", "سفير"],
-        message: "Don't be shy if you need help ✨️🌷🤍",
-        image: "imgs/janaR.jpeg"
-    },
-    {
-        name: "أحمد غلاب",
-        class: "W5",
-        roles: ["سفير", "وسيط"],
-        message: "فَأَمَّا مَن طَغَىٰ (٣٧) وَءَاثَرَ ٱلۡحَيَوٰةَ ٱلدُّنۡيَا (٣٨) فَإِنَّ ٱلۡجَحِيمَ هِيَ ٱلۡمَأۡوَىٰ (٣٩) وَأَمَّا مَنۡ خَافَ مَقَامَ رَبِّهِۦ وَنَهَى ٱلنَّفۡسَ عَنِ ٱلۡهَوَىٰ (٤٠) فَإِنَّ ٱلۡجَنَّةَ هِيَ ٱلۡمَأۡوَىٰ (٤١)",
-        image: "imgs/ghalab.jpeg"
-    },
-    {
-        name: "ميار محمد السيد",
-        class: "S4",
-        roles: ["سفير", "داعم دراسي"],
-        message: "وجودي معاكم علشان نتعلم من بعض و توصلكم اي معلومة أو مساعده بالشكل اللي ترتاحوا ليه اللي يهمنا انكم تبقوا شطورين دايما 💗.",
-        image: "imgs/mayar.jpeg"
-    },
-    {
-        name: "مريم ممدوح",
-        class: "W1",
-        roles: ["وسيط", "داعم دراسي"],
-        message: "\"With God, every hard path is possible, and every distant dream feels near. He sees your heart and never abandons it☺️✨.\"",
-        image: "imgs/mariemM.jpeg"
-    },
-    {
-        name: "منه الله حسن",
-        class: "S2",
-        roles: ["سفير", "وسيط"],
-        message: "بحب وجودي هنا علشان بيخلينا نساعد بعض اذا كان ف ماده صعبه بالنسبه لحد فينا او في تأهلنا لحاجه معينه ونحل المشاكل لبعض ونعرف بعض ع الاماكن❤️🩹",
+        name: "عمر محمد محمد",
+        class: "J2",
+        roles: ["سفير"],
+        message: "I’m here for impact, not just a role 👑",
         image: ""
     },
     {
@@ -175,11 +50,39 @@ const studentsData = [
         image: "imgs/mohanad.jpeg"
     },
     {
-        name: "جنى عمرو",
-        class: "S5",
-        roles: ["سفير", "وسيط"],
-        message: "I’m here to help, support you whenever you need it and we are all here to grow together",
-        image: ""
+        name: "سما محمد عبد النبي",
+        class: "J4",
+        roles: ["وسيط"],
+        message: "The mediator is always by your side 🫵🏻💝",
+        image: "imgs/sama.jpeg"
+    },
+    {
+        name: "سما محمد ذكي",
+        class: "J4",
+        roles: ["سفير"],
+        message: "Your ambassador is always by your side",
+        image: "imgs/samaZ.jpeg"
+    },
+    {
+        name: "محمد عباس محمد",
+        class: "J4",
+        roles: ["وسيط"],
+        message: "Don't forget God's presence.",
+        image: "imgs/abbas.jpeg"
+    },
+    {
+        name: "جني علي عبدالله",
+        class: "J4",
+        roles: ["داعم مهني"],
+        message: "“Wishing you all the best in your journey. Work hard, believe in yourselves, and you will achieve great things.”🌞✨",
+        image: "imgs/jana.jpeg"
+    },
+    {
+        name: "مريم محمد فتحي",
+        class: "J4",
+        roles: ["سفير", "داعم دراسي"],
+        message: "I am here to provide simple explanations of any subject you don't understand, and I am an ambassador for anyone who is confused about the school",
+        image: "imgs/mariem.jpeg"
     },
     {
         name: "اروى عمر",
@@ -196,17 +99,66 @@ const studentsData = [
         image: ""
     },
     {
-        name: "علي احمد كمال",
-        class: "W6",
-        roles: ["سفير", "داعم مهني"],
-        message: "Always remember: No pressure, no diamonds",
-        image: ""
-    },
-    {
         name: "عبد المنعم محمد عبد المنعم",
         class: "J5",
         roles: ["وسيط"],
         message: "أنا موجود معاكم علشان نوصل لبعض أي معلومة أو مساعدة بالشكل اللي يريحكم 🤝 وإن شاء الله نساعد بعض ونبقى دايما أحسن 💪 اللي يهمنا إنكم تبقوا دايمن مرتاحين وحاسين انكم وسط اخواتكم وفي بيتكم التاني ومتقدمين دايما ان شاء الله 💗",
+        image: ""
+    },
+    {
+        name: "إيهاب شريف إيهاب",
+        class: "J6",
+        roles: ["داعم دراسي"],
+        message: "Believe you can and you're halfway there",
+        image: ""
+    },
+    {
+        name: "ياسين اسلام",
+        class: "J6",
+        roles: ["سفير"],
+        message: "“Together we can achieve more.”",
+        image: "imgs/yassen.jpeg"
+    },
+    {
+        name: "جنى رضا",
+        class: "W1",
+        roles: ["داعم دراسي", "سفير"],
+        message: "Don't be shy if you need help ✨️🌷🤍",
+        image: "imgs/janaR.jpeg"
+    },
+    {
+        name: "مريم ممدوح",
+        class: "W1",
+        roles: ["وسيط", "داعم دراسي"],
+        message: "\"With God, every hard path is possible, and every distant dream feels near. He sees your heart and never abandons it☺️✨.\"",
+        image: "imgs/mariemM.jpeg"
+    },
+    {
+        name: "محمد صابر عبد المجيد (صابر)",
+        class: "W1",
+        roles: ["سفير"],
+        message: "Your Ambassador Saber Always by Your Side. ✨",
+        image: "imgs/saber.jpeg"
+    },
+    {
+        name: "تسنيم إمام",
+        class: "W2",
+        roles: ["سفير", "داعم دراسي"],
+        message: "Do everything that will prevent you from saying, 'I wish that had happened.'<br>Be proud of your effort<br>Admit your mistake<br>Remember me ever forget me never ✨",
+        image: ""
+    },
+    {
+        name: "محمود محمد محمود",
+        class: "W3",
+        roles: ["سفير", "داعم مهني"],
+        message: "I wish you all great success and prosperity🪬",
+        image: ""
+    },
+    {
+        name: "سيف اشرف جابر",
+        class: "W3",
+        roles: ["داعم مهني"],
+        message: "Do what you love and don’t worry about what people say✨",
         image: ""
     },
     {
@@ -217,31 +169,86 @@ const studentsData = [
         image: "imgs/sief.jpeg"
     },
     {
-        name: "يارا إبراهيم محمد",
-        class: "J1",
-        roles: ["وسيط"],
-        message: "I'm always here to support you and help resolve any conflicts🤍",
-        image: "imgs/yara.jpeg"
+        name: "يُمنىٰ السيد مُحمد",
+        class: "W3",
+        roles: ["داعم دراسى"],
+        message: "﴿يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنكُمْ وَالَّذِينَ أُوتُوا الْعِلْمَ دَرَجَاتٍ﴾",
+        image: ""
     },
     {
-        name: "محمد صابر عبد المجيد (صابر)",
-        class: "W1",
+        name: "ادهم محمد رضوان",
+        class: "W4",
         roles: ["سفير"],
-        message: "Your Ambassador Saber Always by Your Side. ✨",
-        image: "imgs/saber.jpeg"
+        message: "In the right environment, everyone has the chance to grow and shine. 🌱✨",
+        image: "imgs/adham.jpeg"
     },
     {
-        name: "جني علي عبدالله",
-        class: "J4",
-        roles: ["داعم مهني"],
-        message: "“Wishing you all the best in your journey. Work hard, believe in yourselves, and you will achieve great things.”🌞✨",
-        image: "imgs/jana.jpeg"
+        name: "يحيى قطب ابراهيم",
+        class: "W4",
+        roles: ["وسيط", "سفير"],
+        message: "قال الله تعالى: (لَا خَيْرَ فِي كَثِيرٍ مِّن نَّجْوَاهُمْ إِلَّا مَنْ أَمَرَ بِصَدَقَةٍ أَوْ مَعْرُوفٍ أَوْ إِصْلَاحٍ بَيْنَ النَّاسِ).",
+        image: ""
+    },
+    {
+        name: "البشمهنـدس فَـارِس مُحمـد",
+        class: "W5",
+        roles: ["سفير", "وسيط", "داعم دراسي", "داعم مهني"],
+        message: "ممكن تسألني في المنهج وبرا المنهج ☝🏻❤️",
+        roleMessages: {
+            "داعم دراسي": "ممكن تسألني في المنهج وبرا المنهج ☝🏻❤️",
+            "سفير": "{وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَى وَلَا تَعَاوَنُوا عَلَى الْإِثْمِ وَالْعُدْوَانِ}",
+            "وسيط": "﴿ إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ ۚ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ﴾",
+            "داعم مهني": "﴿ وَأَن لَّيْسَ لِلْإِنسَانِ إِلَّا مَا سَعَىٰ﴾"
+        },
+        image: "imgs/fares.jpeg"
+    },
+    {
+        name: "ادهم عمرو",
+        class: "W5",
+        roles: ["داعم مهني", "سفير"],
+        message: "",
+        image: ""
+    },
+    {
+        name: "أحمد غلاب",
+        class: "W5",
+        roles: ["سفير", "وسيط"],
+        message: "فَأَمَّا مَن طَغَىٰ (٣٧) وَءَاثَرَ ٱلۡحَيَوٰةَ ٱلدُّنۡيَا (٣٨) فَإِنَّ ٱلۡجَحِيمَ هِيَ ٱلۡمَأۡوَىٰ (٣٩) وَأَمَّا مَنۡ خَافَ مَقَامَ رَبِّهِۦ وَنَهَى ٱلنَّفۡسَ عَنِ ٱلۡهَوَىٰ (٤٠) فَإِنَّ ٱلۡجَنَّةَ هِيَ ٱلۡمَأۡوَىٰ (٤١)",
+        image: "imgs/ghalab.jpeg"
     },
     {
         name: "زياد حمدي",
         class: "W5",
         roles: ["سفير", "داعم دراسي"],
         message: "",
+        image: ""
+    },
+    {
+        name: "يوسف السيد احمد",
+        class: "W5",
+        roles: ["سفير", "وسيط"],
+        message: "Think Smarter Not Harder And Shine Bright Like A Diamond 💎",
+        image: ""
+    },
+    {
+        name: "اياد احمد",
+        class: "W6",
+        roles: ["داعم مهني"],
+        message: "Stars can't shine without darkness",
+        image: "imgs/eyad.jpeg"
+    },
+    {
+        name: "سعاد ابراهيم \"سيرو\"",
+        class: "W6",
+        roles: ["سفير", "داعم دراسي"],
+        message: "The beginning is the middle of the road, so I am here to always make it easier and better for you with a smile🤍🤗",
+        image: ""
+    },
+    {
+        name: "علي احمد كمال",
+        class: "W6",
+        roles: ["سفير", "داعم مهني"],
+        message: "Always remember: No pressure, no diamonds",
         image: ""
     },
     {
@@ -259,47 +266,34 @@ const studentsData = [
         image: ""
     },
     {
-        name: "يُمنىٰ السيد مُحمد",
-        class: "W3",
-        roles: ["داعم دراسى"],
-        message: "﴿يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنكُمْ وَالَّذِينَ أُوتُوا الْعِلْمَ دَرَجَاتٍ﴾",
+        name: "عمار هاني",
+        class: "S1",
+        roles: ["سفير"],
+        message: "Don't give up, you deserve another chance to prove yourself 🫂💞",
         image: ""
     },
     {
-        name: "يوسف السيد احمد",
-        class: "W5",
+        name: "منه الله حسن",
+        class: "S2",
         roles: ["سفير", "وسيط"],
-        message: "Think Smarter Not Harder And Shine Bright Like A Diamond 💎",
+        message: "بحب وجودي هنا علشان بيخلينا نساعد بعض اذا كان ف ماده صعبه بالنسبه لحد فينا او في تأهلنا لحاجه معينه ونحل المشاكل لبعض ونعرف بعض ع الاماكن❤️🩹",
         image: ""
     },
     {
-        name: "يحيى قطب ابراهيم",
-        class: "W4",
-        roles: ["وسيط", "سفير"],
-        message: "قال الله تعالى: (لَا خَيْرَ فِي كَثِيرٍ مِّن نَّجْوَاهُمْ إِلَّا مَنْ أَمَرَ بِصَدَقَةٍ أَوْ مَعْرُوفٍ أَوْ إِصْلَاحٍ بَيْنَ النَّاسِ).",
+        name: "ميار محمد السيد",
+        class: "S4",
+        roles: ["سفير", "داعم دراسي"],
+        message: "وجودي معاكم علشان نتعلم من بعض و توصلكم اي معلومة أو مساعده بالشكل اللي ترتاحوا ليه اللي يهمنا انكم تبقوا شطورين دايما 💗.",
+        image: "imgs/mayar.jpeg"
+    },
+    {
+        name: "جنى عمرو",
+        class: "S5",
+        roles: ["سفير", "وسيط"],
+        message: "I’m here to help, support you whenever you need it and we are all here to grow together",
         image: ""
     }
 ];
-
-// Sort studentsData initially by class (J1 to S6)
-const classOrder = { 'J': 1, 'W': 2, 'S': 3 };
-studentsData.sort((a, b) => {
-    const prefixA = a.class[0];
-    const prefixB = b.class[0];
-    const numA = parseInt(a.class.substring(1)) || 0;
-    const numB = parseInt(b.class.substring(1)) || 0;
-
-    // First sort by Division (J, W, S)
-    if (classOrder[prefixA] !== classOrder[prefixB]) {
-        return classOrder[prefixA] - classOrder[prefixB];
-    }
-    // Then sort by Grade Number (1-6)
-    if (numA !== numB) {
-        return numA - numB;
-    }
-    // Finally sort by Name
-    return a.name.localeCompare(b.name, 'ar');
-});
 
 const rolesSection = document.getElementById('roles-section');
 const studentsSection = document.getElementById('students-section');
