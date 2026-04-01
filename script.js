@@ -43,6 +43,13 @@ const studentsData = [
         image: "imgs/farah.jpeg"
     },
     {
+        name: "انس احمد",
+        class: "W3",
+        roles: ["داعم مهني", "سفير"],
+        message: "وان ليس للانسان الا ما سعي",
+        image: "imgs/anas.jpeg"
+    },
+    {
         name: "مهند محمد السيد",
         class: "J3",
         roles: ["وسيط"],
