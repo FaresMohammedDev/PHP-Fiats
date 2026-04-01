@@ -5,7 +5,7 @@ const studentsData = [
         class: "J1",
         roles: ["وسيط"],
         message: "I am always here to help you, and together we will achieve every success. 🤍",
-        image: ""
+        image: "imgs/youssef.jpeg"
     },
     {
         name: "عمر وليد ابراهيم محمد",
