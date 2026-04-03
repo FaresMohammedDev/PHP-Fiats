@@ -61,7 +61,7 @@ const studentsData = [
         class: "J4",
         roles: ["وسيط"],
         message: "The mediator is always by your side 🫵🏻💝",
-        image: "imgs/sama.jpeg"
+        image: "imgs/samaM.jpeg"
     },
     {
         name: "سما محمد ذكي",
