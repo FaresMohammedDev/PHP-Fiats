@@ -92,6 +92,13 @@ const studentsData = [
         image: "imgs/mariem.jpeg"
     },
     {
+        name: "عبدالرحمن محمد الدسوقي عبدالرحمن",
+        class: "J4",
+        roles: ["سفير"],
+        message: "وأما بنعمة ربك فحدث",
+        image: "imgs/dosoky.jpeg"
+    },
+    {
         name: "اروى عمر",
         class: "J5",
         roles: ["وسيط"],
