@@ -284,7 +284,7 @@ const studentsData = [
         class: "W6",
         roles: ["وسيط"],
         message: "As a mediator in our PHP group, I encourage everyone to share ideas and help each other so we can all learn and succeed together.",
-        image: ""
+        image: "imgs/malak.jpeg"
     },
     {
         name: "حمزه خالد",
