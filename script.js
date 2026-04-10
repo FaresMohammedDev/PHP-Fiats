@@ -4,91 +4,84 @@ const studentsData = [
         name: "يوسف مصطفى محمد",
         class: "J1",
         roles: ["وسيط"],
-        message: "I am always here to help you, and together we will achieve every success. 🤍",
+        message: "أنا دائمًا هنا لمساعدتك، ومعًا سنحقق كل نجاح. 🤍",
         image: "imgs/youssef.jpeg"
     },
     {
         name: "عمر وليد ابراهيم محمد",
         class: "J1",
         roles: ["داعم دراسي"],
-        message: "Never lose hope, never give up. Stand up and love what you do until you can do what you love.✨🩵",
+        message: "لا تفقد الأمل أبدًا، ولا تستسلم أبدًا. انهض وأحب ما تفعله حتى تستطيع أن تفعل ما تحب. ✨🩵",
         image: "imgs/omarW.jpeg"
     },
     {
         name: "يارا إبراهيم محمد",
         class: "J1",
         roles: ["وسيط"],
-        message: "I'm always here to support you and help resolve any conflicts🤍",
+        message: "أنا دائمًا هنا لدعمك ومساعدتك في حل أي خلافات. 🤍",
         image: "imgs/yara.jpeg"
     },
     {
         name: "مريم الكيلاني",
         class: "J2",
         roles: ["سفير"],
-        message: "I'm always here to help you 💗",
+        message: "أنا دائمًا هنا لمساعدتك 💗",
         image: "imgs/mariemK.jpeg"
     },
     {
         name: "اسلام احمد نصر",
         class: "J2",
         roles: ["داعم دراسي"],
-        message: "Failure is the basis of success",
+        message: "الفشل هو أساس النجاح",
         image: ""
     },
     {
         name: "عمر محمد محمد",
         class: "J2",
         roles: ["سفير"],
-        message: "I’m here for impact, not just a role 👑",
+        message: "أنا هنا لأصنع تأثيرًا، وليس مجرد دور 👑",
         image: "imgs/omar.jpeg"
     },
     {
         name: "فرح رضوان",
         class: "J3",
         roles: ["سفير", "داعم دراسي"],
-        message: "Believe in yourself ,keep going , your effort will pay off🤍",
+        message: "آمن بنفسك، واصل التقدم، فجهدك سيؤتي ثماره 🤍",
         image: "imgs/farah.jpeg"
-    },
-    {
-        name: "مهند محمد السيد",
-        class: "J3",
-        roles: ["وسيط"],
-        message: "Don't worry, we are here to help you at all times.",
-        image: "imgs/mohanad.jpeg"
     },
     {
         name: "سما محمد عبد النبي",
         class: "J4",
         roles: ["وسيط"],
-        message: "The mediator is always by your side 🫵🏻💝",
+        message: "الوسيط دائمًا بجانبك 🫵🏻💝",
         image: "imgs/samaM.jpeg"
     },
     {
         name: "سما محمد ذكي",
         class: "J4",
         roles: ["سفير"],
-        message: "Your ambassador is always by your side",
+        message: "سفيرك دائمًا بجانبك",
         image: "imgs/samaZ.jpeg"
     },
     {
         name: "محمد عباس محمد",
         class: "J4",
         roles: ["وسيط"],
-        message: "Don't forget God's presence.",
+        message: "لا تنسَ حضور الله.",
         image: "imgs/abbas.jpeg"
     },
     {
         name: "جني علي عبدالله",
         class: "J4",
         roles: ["داعم مهني"],
-        message: "“Wishing you all the best in your journey. Work hard, believe in yourselves, and you will achieve great things.”🌞✨",
+        message: "أتمنى لك كل التوفيق في رحلتك. اعمل بجد، وآمن بنفسك، وستحقق أشياء عظيمة. 🌞✨",
         image: "imgs/jana.jpeg"
     },
     {
         name: "مريم محمد فتحي",
         class: "J4",
         roles: ["سفير", "داعم دراسي"],
-        message: "I am here to provide simple explanations of any subject you don't understand, and I am an ambassador for anyone who is confused about the school",
+        message: "أنا هنا لتقديم شروحات بسيطة لأي مادة لا تفهمها، وأنا سفير لكل من يشعر بالحيرة في المدرسة",
         image: "imgs/mariem.jpeg"
     },
     {
@@ -102,7 +95,7 @@ const studentsData = [
         name: "اروى عمر",
         class: "J5",
         roles: ["وسيط"],
-        message: "im here to help you solve your problem 🩵",
+        message: "أنا هنا لمساعدتك في حل مشكلتك 🩵",
         image: "imgs/arwa.jpeg"
     },
     {
@@ -116,8 +109,8 @@ const studentsData = [
         name: "عمار عمر",
         class: "J5",
         roles: ["داعم دراسي"],
-        message: "Iam here to help you and explain any subject with steps easy for understand 🤍",
-        image: ""
+        message: "أنا هنا لمساعدتك وشرح أي مادة بخطوات سهلة للفهم 🤍",
+        image: "imgs/3mar.jpeg"
     },
     {
         name: "عبد المنعم محمد عبد المنعم",
@@ -130,42 +123,42 @@ const studentsData = [
         name: "إيهاب شريف إيهاب",
         class: "J6",
         roles: ["داعم دراسي"],
-        message: "Believe you can and you're halfway there",
+        message: "آمن أنك تستطيع، وقد قطعت نصف الطريق",
         image: ""
     },
     {
         name: "ياسين اسلام",
         class: "J6",
         roles: ["سفير"],
-        message: "“Together we can achieve more.”",
+        message: "معًا يمكننا تحقيق المزيد.",
         image: "imgs/yassen.jpeg"
     },
     {
         name: "جنى رضا",
         class: "W1",
         roles: ["داعم دراسي", "سفير"],
-        message: "Don't be shy if you need help ✨️🌷🤍",
+        message: "لا تخجل إذا احتجت إلى المساعدة ✨️🌷🤍",
         image: "imgs/janaR.jpeg"
     },
     {
         name: "مريم ممدوح",
         class: "W1",
         roles: ["وسيط", "داعم دراسي"],
-        message: "\"With God, every hard path is possible, and every distant dream feels near. He sees your heart and never abandons it☺️✨.\"",
+        message: "مع الله، يصبح كل طريق صعب ممكنًا، وكل حلم بعيد قريبًا. هو يرى قلبك ولا يتركه أبدًا ☺️✨.",
         image: "imgs/mariemM.jpeg"
     },
     {
         name: "محمد صابر عبد المجيد (صابر)",
         class: "W1",
         roles: ["سفير"],
-        message: "Your Ambassador Saber Always by Your Side. ✨",
+        message: "سفيرك صابر دائمًا بجانبك ✨",
         image: "imgs/saber.jpeg"
     },
     {
         name: "تسنيم إمام",
         class: "W2",
         roles: ["سفير", "داعم دراسي"],
-        message: "Do everything that will prevent you from saying, 'I wish that had happened.'<br>Be proud of your effort<br>Admit your mistake<br>Remember me ever forget me never ✨",
+        message: "افعل كل ما يمنعك من قول: 'ليت ذلك قد حدث'.<br>كن فخورًا بجهدك<br>اعترف بخطئك<br>تذكرني ولا تنساني أبدًا ✨",
         image: ""
     },
     {
@@ -179,14 +172,14 @@ const studentsData = [
         name: "محمود محمد محمود",
         class: "W3",
         roles: ["سفير", "داعم مهني"],
-        message: "I wish you all great success and prosperity🪬",
+        message: "أتمنى لكم كل النجاح والازدهار🪬",
         image: ""
     },
     {
         name: "سيف اشرف جابر",
         class: "W3",
         roles: ["داعم مهني"],
-        message: "Do what you love and don’t worry about what people say✨",
+        message: "افعل ما تحب ولا تقلق مما يقوله الناس ✨",
         image: ""
     },
     {
@@ -201,13 +194,13 @@ const studentsData = [
         class: "W3",
         roles: ["داعم دراسى"],
         message: "﴿يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنكُمْ وَالَّذِينَ أُوتُوا الْعِلْمَ دَرَجَاتٍ﴾",
-        image: ""
+        image: "imgs/youmna.jpeg"
     },
     {
         name: "ادهم محمد رضوان",
         class: "W4",
         roles: ["سفير"],
-        message: "In the right environment, everyone has the chance to grow and shine. 🌱✨",
+        message: "في البيئة المناسبة، لكل شخص فرصة للنمو والتألق. 🌱✨",
         image: "imgs/adham.jpeg"
     },
     {
@@ -255,35 +248,35 @@ const studentsData = [
         name: "يوسف السيد احمد",
         class: "W5",
         roles: ["سفير", "وسيط"],
-        message: "Think Smarter Not Harder And Shine Bright Like A Diamond 💎",
+        message: "فكّر بذكاء أكثر وليس بجهد أكبر، وتألق مثل الألماس 💎",
         image: ""
     },
     {
         name: "اياد احمد",
         class: "W6",
         roles: ["داعم مهني"],
-        message: "Stars can't shine without darkness",
+        message: "النجوم لا يمكنها أن تتألق بدون الظلام",
         image: "imgs/eyad.jpeg"
     },
     {
         name: "سعاد ابراهيم \"سيرو\"",
         class: "W6",
         roles: ["سفير", "داعم دراسي"],
-        message: "The beginning is the middle of the road, so I am here to always make it easier and better for you with a smile🤍🤗",
+        message: "البداية هي نصف الطريق، لذلك أنا هنا دائمًا لأجعلها أسهل وأفضل لك بابتسامة 🤍🤗",
         image: ""
     },
     {
         name: "علي احمد كمال",
         class: "W6",
         roles: ["سفير", "داعم مهني"],
-        message: "Always remember: No pressure, no diamonds",
+        message: "تذكر دائمًا: لا ضغط، لا ألماس",
         image: ""
     },
     {
         name: "ملك احمد",
         class: "W6",
         roles: ["وسيط"],
-        message: "As a mediator in our PHP group, I encourage everyone to share ideas and help each other so we can all learn and succeed together.",
+        message: "بصفتي وسيطًا في مجموعة PHP الخاصة بنا، أشجع الجميع على مشاركة الأفكار ومساعدة بعضهم البعض حتى نتمكن جميعًا من التعلم والنجاح معًا.",
         image: "imgs/malak.jpeg"
     },
     {
@@ -297,14 +290,14 @@ const studentsData = [
         name: "عمار هاني",
         class: "S1",
         roles: ["سفير"],
-        message: "Don't give up, you deserve another chance to prove yourself 🫂💞",
+        message: "لا تستسلم، أنت تستحق فرصة أخرى لإثبات نفسك 🫂💞",
         image: ""
     },
     {
         name: "عمر احمد إبراهيم بيومي",
         class: "S2",
         roles: ["سفير", "وسيط"],
-        message: "“A word of support today may create someone's success tomorrow.” ✨",
+        message: "كلمة دعم اليوم قد تصنع نجاح شخص ما غدًا ✨",
         image: "imgs/bayomy.jpeg"
     },
     {
@@ -325,14 +318,14 @@ const studentsData = [
         name: "جنى عمرو",
         class: "S5",
         roles: ["سفير", "وسيط"],
-        message: "I’m here to help, support you whenever you need it and we are all here to grow together",
+        message: "أنا هنا لمساعدتك ودعمك كلما احتجت لذلك، ونحن جميعًا هنا لننمو معًا",
         image: ""
     },
     {
         name: "هاجر السيد عبد المنعم",
         class: "S6",
         roles: ["سفير", "داعم مهني"],
-        message: "I’m always here for you to help, support, and guide you whenever you need it. Feel free to ask anytime🫶🏻.",
+        message: "أنا دائمًا هنا لمساعدتك ودعمك وإرشادك كلما احتجت لذلك. لا تتردد في السؤال في أي وقت 🫶🏻.",
         image: "imgs/hagar.jpeg"
     }
 ];
